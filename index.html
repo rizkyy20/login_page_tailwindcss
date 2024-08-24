@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,700;1,100;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+            fontFamily: {
+              karla: "Karla",
+              poppins: "Poppins"
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      *,
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+    </style>
+    <title>Login Page</title>
+  </head>
+  <body class="bg-cyan-100">
+    <form action="#">
+      <div class="flex justify-center items-center h-screen">
+        <div class="w-6/12 flex justify-center" id="wrap">
+          <div class="border-solid border-2 bg-white border-gray-300 md:p-10 px-4 py-9 rounded-lg shadow-2xl">
+            <div>
+              <h2 class="text-center text-blue-500 font-bold text-2xl font-poppins mb-6">Login Page</h2>
+            </div>
+            <div>
+              <input
+                type="text"
+                placeholder="Username"
+                class="p-2 md:w-72  w-64 outline-2 border-2 border-solid border-gray-300 rounded-md my-4"
+              />
+            </div>
+            <div>
+              <input
+                type="password"
+                placeholder="Password"
+                class="p-2 md:w-72 w-64 border-gray-300 rounded-md border-solid border-2 mb-1"
+              />
+            </div>
+            <div class="flex items-center justify-between">
+              <div class="flex gap-1">
+                <input type="checkbox" class="text-blue-600 form-checkbox" />
+                <label for="" class="text-xs font-karla">remember me?</label>
+              </div>
+              <div>
+                <a href="" class="text-xs hover:underline hover:text-indigo-700">forget password?</a>
+              </div>
+            </div>
+            <div class="mt-6">
+              <button
+                class="hover:-translate-y-2 ease-out duration-300 bg-blue-500 md:w-72 w-64 rounded-md text-white p-2 font-semibold font-poppins"
+              >
+                Login
+              </button>
+            </div>
+            <div class="text-center text-xs font-karla mt-1">
+              <p>don't have an account?<a href="" class="underline hover:text-indigo-700">sign up</a></p>
+            </div>
+            <!-- <div class="grid justify-items-end"> -->
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+    </form>
+    <p class="text-center text-xs">copyright frozz &copy; 2024</p>
+  </body>
+</html>
